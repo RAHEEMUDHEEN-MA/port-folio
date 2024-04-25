@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -9,9 +9,9 @@
     height: 8%;
     animation: sldeFromBottom 1s ease-in-out;
 
-}
+} */
 
-@keyframes sldeFromBottom {
+/* @keyframes sldeFromBottom {
     from{
       transform: translateY(40%);
       opacity: 0;
@@ -40,4 +40,20 @@
     mix-blend-mode:multiply ;
 
      
+} */
+
+.video-text-box{
+    /* background-color: red; */
+    animation: sldeFromBottom 1.5s ease-in-out;
+
+}
+@keyframes sldeFromBottom {
+    from{
+      transform: translateY(60%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0%); 
+      opacity: 1;
+    }
 }
