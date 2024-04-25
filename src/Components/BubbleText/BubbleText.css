@@ -26,7 +26,7 @@
   }
  }
   .bubble-text {
-    font-size: clamp(3rem, calc(1rem + 4.5vw), 8rem);
+    font-size: clamp(3rem, calc(1.5rem + 4.5vw), 8rem);
     color: hsla(0, 0%, 72%, 0.522);
     user-select: none;
     animation: sldeFromBottom 1s ease-in-out;

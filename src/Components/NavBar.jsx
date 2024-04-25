@@ -11,7 +11,7 @@ const NavBar = () => {
       </div>{" "}
       <div className="hidden sm:flex">
         <ul className="text-gray-500 hidden sm:flex items-center  gap-4  ">
-          <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">Home</li>
+          <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105"><a href="/">Home</a></li>
           <li  className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">About</li>
           <li  className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">Projects</li>
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">Contact</li>
