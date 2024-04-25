@@ -24,7 +24,7 @@ const NavBar = () => {
           <li  className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">Projects</li>
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">Contact</li>
           <button  className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none">
-            Let's Talk
+                Lets Talk
           </button>
         </ul>
       </div>

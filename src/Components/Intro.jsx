@@ -4,7 +4,7 @@ import React from "react";
 
 const Intro = () => {
   return (
-    <div className="h-20 md:w-1/2 text-gray-600 font-semibold text-lg md:pt-6">
+    <div className="h-20 md:w-1/2 text-neutral-600  text-lg md:pt-6">
       <motion.span 
        initial={{ opacity: 0,}}
        animate={{ opacity: 1,}}

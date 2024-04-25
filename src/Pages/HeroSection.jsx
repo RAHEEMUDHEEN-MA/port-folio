@@ -2,6 +2,7 @@ import React from 'react'
 import BubbleText from '../Components/BubbleText/BubbleText'
 import VideoMaskedText from '../Components/VideoMaskedText/VideoMaskedText'
 import Intro from '../Components/Intro'
+import DownloadBtn from '../Components/DownloadBtn'
 
 const HeroSection = () => {
   return (
@@ -9,6 +10,9 @@ const HeroSection = () => {
       <BubbleText/>
       <VideoMaskedText/>
       <Intro/>
+      <br />
+      <br />
+      <DownloadBtn/>
     </div>
   )
 }
