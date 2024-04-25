@@ -26,7 +26,8 @@ useEffect(() => {
 
   return (
     <div className='bubble-container animate-pulse hover:animate-none'>
-      <div className="bubble-text text">I'M RAHEEMUDHEEN </div>
+      <div className="bubble-text text">I'M  </div>
+      <div className="bubble-text text">RAHEEMUDHEEN </div>
     </div>
   )
 }
