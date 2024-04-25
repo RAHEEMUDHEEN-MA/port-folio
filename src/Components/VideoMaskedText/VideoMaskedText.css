@@ -44,7 +44,7 @@
 
 .video-text-box{
     /* background-color: red; */
-    animation: sldeFromBottom 1.5s ease-in-out;
+    animation: sldeFromBottom 4s ease-in-out;
 
 }
 @keyframes sldeFromBottom {
