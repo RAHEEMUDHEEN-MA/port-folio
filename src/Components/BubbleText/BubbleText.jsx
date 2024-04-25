@@ -25,7 +25,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className= ' bubble-container animate-pulse hover:animate-none   '>
+    <div className= ' bubble-container animate-pulse hover:animate-none    '>
       <div className="bubble-text text">I'M</div>
      <br className='md:hidden' />
       <div className="bubble-text text">RAHEEMUDHEEN </div>

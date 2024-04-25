@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { motion } from "framer-motion"
-import { SiCalendly } from "react-icons/si";
+// import { SiCalendly } from "react-icons/si";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false) 
@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div
       className=" navbar-main  text-gray-300 text-1xl font-semibold w-full h-20 px-2 sm:px-24 flex justify-end sm:justify-between  items-center "
-      style={{ boxShadow: "2px 2px 10px rgb(10, 10, 31" }}
+      style={{ boxShadow: "2px 2px 10px rgb(10, 10, 1" }}
     >
       <div className="h-full  font-serif text-3xl text-pink-900 italic tracking-wide leading-tight">
       </div>{" "}
@@ -43,11 +43,15 @@ const NavBar = () => {
       
       
     </button>
+
+    
       </div>
       {menu&& <motion.div
       initial={{ opacity: 0, y: "-100%" }}
       animate={{ opacity: 1, y: "-10%" }}
+      exit={{ opacity: 0, y: "-100%" }} 
       transition={{ duration: 0.6, ease: "easeInOut" }}
+
       className=" relative z-20 bg-black   p-32 top-60  flex justify-center h-full items-center gap-10"
       style={{backgroundColor:"rgba(0, 0, 0, 0.9)",width:"100ch"}}
       >
