@@ -28,7 +28,7 @@ const VideoMaskedText = () => {
             <motion.div
               initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: "0%" }}
-              transition={{ duration: 0.7, ease: "easeInOut" }}
+              transition={{ duration: 0.9, ease: "easeInOut" }}
               className="text-7xl md:text-8xl text-left"
             >
               Full Stack Developer + <br />
