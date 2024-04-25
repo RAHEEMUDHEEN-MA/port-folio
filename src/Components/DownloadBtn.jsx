@@ -13,16 +13,7 @@ const DownloadBtn = () => {
             <a href="https://drive.google.com/file/d/1h_aCJ_JLGvAigLIe-ceNQPTufKFyutU_/view" target="_blank" rel="noopener noreferrer">Download CV</a>
           </motion.button>
 
-          const constraintsRef = useRef(null)
 
-return (
-  <motion.div ref={constraintsRef}>
-    <motion.div
-      drag
-      dragConstraints={constraintsRef}
-    />
-  </motion.div>
-)
     </div>
 
     
