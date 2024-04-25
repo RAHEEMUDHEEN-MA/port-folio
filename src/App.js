@@ -7,7 +7,7 @@ function App() {
   const [loading, setloading] = useState(true)
   setTimeout(() => {
     setloading(false)
-  }, 1000);
+  }, 700);
   return (
     <div>
      {!loading&&<HeroSection/>}
