@@ -74,7 +74,7 @@ const NavBar = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.9)", width: "100ch" }}
         >
           <div className=" flex">
-            <ul className="text-gray-500 items-center  gap-24  ">
+            <ul className="text-gray-500 items-center flex flex-col gap-2  ">
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105 ">
                 <a href="/">Home</a>
               </li>
@@ -87,6 +87,17 @@ const NavBar = () => {
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
                 Contact
               </li>
+              <motion.button
+          whileHover={{
+            scale: 1.02,
+            transition: { duration: 0.08 },
+          }}
+          whileTap={{ scale: 1,
+            transition: { duration: 0.1 }
+         }}
+          className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none">
+            Lets Talk
+          </motion.button>
             </ul>
           </div>
         </motion.div>
