@@ -11,7 +11,7 @@ const VideoMaskedText = () => {
   };
 
   return (
-    <div className={`text-left relative w-full md:h-44 h-72 ${videoLoaded ? "" : "hidden"}`}>
+    <div className={`text-left relative w-full lg:h-44 h-72 ${videoLoaded ? "" : "hidden"}`}>
       <video
         className="absolute p-1 inset-0 w-full h-full object-cover overflow-hidden"
         autoPlay
