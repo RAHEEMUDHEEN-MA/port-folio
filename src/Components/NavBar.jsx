@@ -23,26 +23,22 @@ const NavBar = () => {
             <a href="/">Home</a>
           </li>
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                        <a href="/">About</a>
-
+            <a href="/">About</a>
           </li>
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                         <a href="/">Projects</a>
-
+            <a href="/">Projects</a>
           </li>
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                         <a href="/">Contact</a>
-
+            <a href="/">Contact</a>
           </li>
           <motion.button
-          whileHover={{
-            scale: 1.02,
-            transition: { duration: 0.08 },
-          }}
-          whileTap={{ scale: 1,
-            transition: { duration: 0.1 }
-         }}
-          className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none">
+            whileHover={{
+              scale: 1.02,
+              transition: { duration: 0.08 },
+            }}
+            whileTap={{ scale: 1, transition: { duration: 0.1 } }}
+            className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
+          >
             Lets Talk
           </motion.button>
         </ul>
@@ -79,25 +75,24 @@ const NavBar = () => {
                 <a href="/">Home</a>
               </li>
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                About
+                <a href="/">About</a>
               </li>
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                Projects
+                <a href="/">Projects</a>
               </li>
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
-                Contact
+                <a href="/">Contact</a>
               </li>
               <motion.button
-          whileHover={{
-            scale: 1.02,
-            transition: { duration: 0.08 },
-          }}
-          whileTap={{ scale: 1,
-            transition: { duration: 0.1 }
-         }}
-          className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none">
-            Lets Talk
-          </motion.button>
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.08 },
+                }}
+                whileTap={{ scale: 1, transition: { duration: 0.1 } }}
+                className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
+              >
+                Lets Talk
+              </motion.button>
             </ul>
           </div>
         </motion.div>
