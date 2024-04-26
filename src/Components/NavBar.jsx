@@ -74,7 +74,7 @@ const NavBar = () => {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.9)", width: "100ch" }}
         >
           <div className=" flex">
-            <ul className="text-gray-500 items-center flex flex-col gap-2  ">
+            <ul className="text-gray-500 items-center flex flex-col gap-2 pb-10 ">
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105 ">
                 <a href="/">Home</a>
               </li>
