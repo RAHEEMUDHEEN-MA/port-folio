@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const DownloadBtn = () => {
+git const DownloadBtn = () => {
   return (
     <div>
       <motion.button
@@ -22,7 +22,7 @@ const DownloadBtn = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download CV
+          Get Resume
         </a>
       </motion.button>
     </div>

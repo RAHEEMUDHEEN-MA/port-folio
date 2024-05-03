@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 // import { SiCalendly } from "react-icons/si";
 
 const NavBar = () => {
+
+  
+  
   const [menu, setMenu] = useState(false);
   const buttonVariants = {
     initial: { rotate: 0 },
