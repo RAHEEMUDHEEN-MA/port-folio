@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-git const DownloadBtn = () => {
+const DownloadBtn = () => {
   return (
     <div>
       <motion.button
