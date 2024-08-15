@@ -24,8 +24,8 @@ const VideoMaskedText = () => {
         className="absolute p-1 inset-0 w-full h-full object-cover overflow-hidden"
         autoPlay
         loop
-        muted
-        onLoadedData={handleVideoLoad} // Set videoLoaded to true when video has loaded
+        muted 
+        onLoadedData={handleVideoLoad} 
       >
         <source src={bannervid} type="video/mp4" />
         Your browser does not support the video tag.

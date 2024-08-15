@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./NavBar.css";
 import { motion } from "framer-motion";
+import ChatBtn from "../Chat/ChatBtn";
 // import { SiCalendly } from "react-icons/si";
 
 const NavBar = () => {
-
-  
-  
   const [menu, setMenu] = useState(false);
+  const toggleMenu = () => setMenu(prevMenu => !prevMenu);
+
   const buttonVariants = {
     initial: { rotate: 0 },
     crossed: { rotate: 45, scale: 1.15 },
@@ -34,7 +34,7 @@ const NavBar = () => {
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
             <a href="/">Contact</a>
           </li>
-          <motion.button
+          {/* <motion.button
             whileHover={{
               scale: 1.02,
               transition: { duration: 0.08 },
@@ -43,7 +43,8 @@ const NavBar = () => {
             className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
           >
             Lets Talk
-          </motion.button>
+          </motion.button> */}
+          <ChatBtn />
         </ul>
       </div>
       <div className="flex sm:hidden absolute">
@@ -86,7 +87,7 @@ const NavBar = () => {
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
                 <a href="/">Contact</a>
               </li>
-              <motion.button
+              {/* <motion.button
                 whileHover={{
                   scale: 1.02,
                   transition: { duration: 0.08 },
@@ -95,7 +96,8 @@ const NavBar = () => {
                 className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
               >
                 Lets Talk
-              </motion.button>
+              </motion.button> */}
+              <ChatBtn setMenu={toggleMenu} menu={menu} />
             </ul>
           </div>
         </motion.div>
