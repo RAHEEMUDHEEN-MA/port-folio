@@ -1,12 +1,21 @@
-import { motion } from "framer-motion";
+import {motion, useScroll, useTransform}from "framer-motion"
 import React from "react";
 
 
 
 const DownloadBtn = () => {
+
+  const { scrollYProgress } = useScroll();
+
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]); // Map scroll position to opacity value
+  // const scale = useTransform(scrollYProgress, [0, 4], [1, 0]); // Map scroll position to opacity value
+  const xPosition = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]); // Map scroll position to x-axis position
+
   return (
     <div>
       <motion.button
+            style={{ opacity,  x: xPosition }}
+
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
