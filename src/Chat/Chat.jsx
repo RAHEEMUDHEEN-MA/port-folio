@@ -43,7 +43,7 @@ const Chat = ({ onClose, user }) => {
   };
 
   return (
-    <div className="fixed top-0 right-15 md:right-0 w-1/2 h-1/2 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
       <div className="bg-black text-white p-4 rounded-lg w-80 md:max-w-md relative">
         <button
           className="absolute top-2 right-2  text-gray-500 hover:text-white rounded-full w-8 h-8 flex justify-center items-center"
@@ -51,12 +51,12 @@ const Chat = ({ onClose, user }) => {
         >
           x
         </button>
-        <h1 className="text-2xl font-bold mb-2">Hi {user.displayName}</h1>
-        <p className="text-lg">Let's Connect !</p>
+        <h1 className="text-2xl font-bold  text-gray-400 mb-2">Hi {user.displayName}</h1>
+        <p className="text-lg text-gray-400">Let's Connect!</p>
         <form onSubmit={sendMessage}>
           <div className="flex mt-3 gap-1">
             <input
-              className="text-black rounded-full px-3 font-light"
+              className="text-black bg-gray-300 rounded-full px-3 font-light"
               value={message}
               type="text"
               onChange={(e) => setmessage(e.target.value)}
@@ -64,8 +64,8 @@ const Chat = ({ onClose, user }) => {
             />
             <button
               type="submit"
-              disabled={status === "loading"}
-              className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
+              disabled={!message || status === "loading"}
+              className="bg-gradient-to-br  from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
             >
               {status === "loading" ? "..." : "Send"}
             </button>

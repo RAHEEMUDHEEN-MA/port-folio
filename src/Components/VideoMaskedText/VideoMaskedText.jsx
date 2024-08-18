@@ -13,7 +13,7 @@ const VideoMaskedText = () => {
   const { scrollYProgress } = useScroll();
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]); // Map scroll position to opacity value
-  const scale = useTransform(scrollYProgress, [0, 8], [1, 0]); // Map scroll position to opacity value
+  const scale = useTransform(scrollYProgress, [0, 7], [1, 0]); // Map scroll position to opacity value
   const xPosition = useTransform(scrollYProgress, [0, 0.5], ["0%", "20%"]); // Map scroll position to x-axis position
 
   return (
