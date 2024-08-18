@@ -8,7 +8,6 @@ const About = () => {
     offset: ["0 5", "0 10"],
   });
 
-  // Map scrollY to scale and opacity values
   const scale = useTransform(scrollY, [0, 50], [1, 0.5]);
   const opacity = useTransform(scrollY, [0, 10], [10, 100]);
 
@@ -22,7 +21,6 @@ const About = () => {
         }}
         className="font-extrabold text-purple-400 text-2xl mt-52"
       >
-        {/* LET'S BUILD TOGETHER */}
       </motion.span>
     </div>
   );
