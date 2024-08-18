@@ -35,7 +35,7 @@ const Chat = ({ onClose, user }) => {
   }, [onClose]);
 
   const sendMessage = async (event) => {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
     setStatus("loading");
     try {
       const UserMessageRef = collection(db, "Visitors", user.uid, "Messages");
@@ -49,7 +49,7 @@ const Chat = ({ onClose, user }) => {
       });
 
       setStatus("success");
-      setmessage(""); // Clear the input field after successful submission
+      setmessage(""); 
     } catch (error) {
       setStatus("error");
       console.error("Error Sending Message:", error);

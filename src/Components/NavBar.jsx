@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import { motion } from "framer-motion";
 import ChatBtn from "../Chat/ChatBtn";
-// import { SiCalendly } from "react-icons/si";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
@@ -34,16 +33,7 @@ const NavBar = () => {
           <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
             <a href="/">Contact</a>
           </li>
-          {/* <motion.button
-            whileHover={{
-              scale: 1.02,
-              transition: { duration: 0.08 },
-            }}
-            whileTap={{ scale: 1, transition: { duration: 0.1 } }}
-            className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
-          >
-            Lets Talk
-          </motion.button> */}
+      
           <ChatBtn />
         </ul>
       </div>
@@ -52,11 +42,10 @@ const NavBar = () => {
           onClick={() => setMenu(!menu)}
           type="button"
           className="hover:bg-gray-950 hover:text-white rounded-md px-3 py-2 hover:scale-105 flex flex-col gap-3 active:border"
-          // use defined variants
         >
           <motion.span
             initial={false}
-            animate={menu ? "crossed" : "initial"} // animate based on menu state
+            animate={menu ? "crossed" : "initial"} 
             variants={buttonVariants}
             className="h-0.5 w-8 block bg-gray-400 rounded-md"
           ></motion.span>
@@ -87,16 +76,7 @@ const NavBar = () => {
               <li className=" text-white' : 'text-gray-300 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 hover:scale-105">
                 <a href="/">Contact</a>
               </li>
-              {/* <motion.button
-                whileHover={{
-                  scale: 1.02,
-                  transition: { duration: 0.08 },
-                }}
-                whileTap={{ scale: 1, transition: { duration: 0.1 } }}
-                className="bg-gradient-to-br from-purple-600 to-gray-950 rounded-md px-5 py-2 text-gray-300 hover:text-white hover:bg-purple-700 animate-none"
-              >
-                Lets Talk
-              </motion.button> */}
+
               <ChatBtn setMenu={toggleMenu} menu={menu} />
             </ul>
           </div>

@@ -4,9 +4,9 @@ import React from "react";
 const Intro = () => {
   const { scrollYProgress } = useScroll();
 
-  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]); // Map scroll position to opacity value
-  const scale = useTransform(scrollYProgress, [0, 4], [1, 0]); // Map scroll position to opacity value
-  const xPosition = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]); // Map scroll position to x-axis position
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]); 
+  const scale = useTransform(scrollYProgress, [0, 4], [1, 0]); 
+  const xPosition = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]); 
 
   return (
     <motion.div
