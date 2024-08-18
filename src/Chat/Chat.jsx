@@ -20,6 +20,20 @@ const Chat = ({ onClose, user }) => {
     setatime(formattedTime);
   }, []);
 
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    };
+
+    document.addEventListener('keydown', handleEscKey);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscKey);
+    };
+  }, [onClose]);
+
   const sendMessage = async (event) => {
     event.preventDefault(); // Prevent the default form submission
     setStatus("loading");
@@ -44,7 +58,7 @@ const Chat = ({ onClose, user }) => {
 
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-      <div className="bg-black text-white p-4 rounded-lg w-80 md:max-w-md relative">
+      <div className="bg-black text-white p-4 rounded-lg w-auto md:max-w-md relative">
         <button
           className="absolute top-2 right-2  text-gray-500 hover:text-white rounded-full w-8 h-8 flex justify-center items-center"
           onClick={onClose}
