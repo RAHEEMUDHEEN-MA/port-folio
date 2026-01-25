@@ -11,6 +11,21 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
-export const auth = getAuth(app);
+
+// Initialize Firebase with error handling to prevent app crashes
+let app, db, auth;
+
+try {
+  app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+  auth = getAuth(app);
+  console.log("✅ Firebase initialized successfully");
+} catch (error) {
+  console.error("❌ Firebase initialization failed:", error.message);
+  console.warn("⚠️ App will continue without Firebase functionality. Please check your .env file.");
+  // Provide null exports so app doesn't crash
+  db = null;
+  auth = null;
+}
+
+export { db, auth };
